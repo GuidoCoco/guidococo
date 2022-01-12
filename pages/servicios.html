@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,31 +8,44 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap"
-        rel="stylesheet">
-    <title>Visit Polonia</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <title>Tours</title>
 </head>
 
 <body>
 
-    <header class="header">
-        <a href="../index.html"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Flag_of_Poland_%28with_coat_of_arms%29.svg/1920px-Flag_of_Poland_%28with_coat_of_arms%29.svg.png"
-                alt="flag" width="150" height="75"></a>
-        <nav class="header__nav">
-            <ul class="header__nav--principal">
-                <li><a href="../index.html" class="home">Home</a></li>
-                <li><a href="servicios.html" class="services">Servicios</a></li>
-                <li><a href="tours.html" class="toures">Tours</a></li>
-                <li><a href="about.html" class="acerca">About</a></li>
-                <li><a href="contact.html" class="contactame">Contacto</a></li>
+    
+<header class="header">
+    <div class="flag"><a href="../index.html"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Flag_of_Poland_%28with_coat_of_arms%29.svg/1920px-Flag_of_Poland_%28with_coat_of_arms%29.svg.png"
+        alt="flag" width="150" height="75" class="flagheader">
+    
+
+</a>
+    <div class="container">
+        
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="../index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="servicios.html" class="nav-link px-2 text-white">Servicios</a></li>
+                <li><a href="tours.html" class="nav-link px-2 text-white">Tours</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="contact.html" class="nav-link px-2 text-white">Contacto</a></li>
             </ul>
 
-        </nav>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
 
-        
-        
-    </header>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
 
 
 
@@ -76,10 +88,10 @@
     </div>
 
 
-    <footer class="footer__servicios">
+    <footer class="footer">
         <h3>Encuéntranos en redes sociales</h3>
 
-        <ul class="footer_menu--servicios">
+        <ul class="footer_menu--tours">
             <li>Facebook</li>
             <li>Instagram</li>
             <li>Twitter</li>
@@ -88,5 +100,11 @@
     </footer>
 
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+<script src="../js/bootstrap.min.js"></script>
 
 </html>
