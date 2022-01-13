@@ -5,11 +5,11 @@
 
 }
 
-/*----------------------------------------------------INDEX----------------------------------------------------*/
+/*--------------------------------INDEX--------------------------------*/
 
 /*-----BODY-----*/
 
-body{font-family: 'Zen Kurenaido', sans-serif;}
+
 h1{
     background-color: white;
     padding: 2rem;
@@ -34,21 +34,18 @@ h1{
 
 /*-----HEADER-----*/
 
-.header{display: flex;
-padding: 1rem;
+.header{background-color: #a73c3c;
+padding-top: 1rem;
+padding-bottom: 1rem;}
+
+
+.flag{display: flex;
+    padding-left: 1rem;                
 }
 
-.header__nav{display: flex;
-justify-content: right;
-padding-left: 55rem;
-}
-
-.header{
-    background-size: cover;
-    background-position: center;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(175, 54, 54));
-}
-
+.container{
+    font-family: 'Philosopher', sans-serif;
+    }
 
 
 
@@ -96,6 +93,72 @@ justify-content: center;}
     align-content: center;
 }
 
+.titulo{
+    font-family:'Prata', serif;
+}
+
+.parrafo{
+    font-family: 'Gelasio', serif;
+}
+
+
+
+/*-----CARDS-----*/
+
+.cardContainer{display: flex;
+    align-content: center;
+    justify-content: space-evenly
+    
+}
+
+.cardContainer{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Efecto 3D */
+  }
+  
+  /* Posición y tamaño de frente y dorso */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Hover sobre las tarjetas */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Posición del frente y el dorso */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Estilo del frente */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Estilo del dorso de la tarjeta */
+  .flip-card-back {
+    background-color: rgb(243, 83, 83);
+    color: rgb(243, 83, 83);
+    transform: rotateY(180deg);
+  }
 
 
 .section_contenido{
@@ -125,12 +188,13 @@ text-align: center;
 
 /*-----IMAGENES-----*/
 
-.container{
+.container-fluid{
     display: flex;
     justify-content:center;
     gap: 15px;
     background-color: rgb(211, 55, 55);
     padding: 15px;
+    
 
 }
 
@@ -147,6 +211,13 @@ text-align: center;
     list-style-type: none;
 }
 
+.footer{display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Prata', serif;}
+
+.footer_menu{font-family: 'Roboto', sans-serif;
+}
 
 /*----------------------------------------------------SERVICIOS----------------------------------------------------*/
 
@@ -438,33 +509,47 @@ text-align: center;
     list-style-type: none;
 }
 
+
+
+
+
 /*-----GRID IMAGENES HOME-----*/
 
-.container {
+/* .container-fluid {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
     grid-auto-flow: row;
     }
 
-.container { 
+.container-fluid { 
     display: flex;
     justify-content: center;
     flex-direction: column;
    
-}
+} */
+
+.container-fluid{display:flex;
+flex-direction: column}
   
 .i1 {display: flex;
+align-content: center;
 padding-top: 2rem;
+<<<<<<< HEAD
 padding-right: 5rem;
 padding-bottom: 3rem;
 }
+=======
+padding-right: 12rem;
+padding-bottom: 3rem;
+padding-left: 10rem;}
+>>>>>>> ambienteDev
 
 .i1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 4px 4px;
+    gap: 25px 25px;
     grid-auto-flow: row;
     grid-template-areas:
       "Imagen1 Imagen2 Imagen3 Imagen4"
@@ -492,3 +577,7 @@ padding-bottom: 3rem;
             background-color: #f10c6c;
         }
     }
+      
+
+
+      

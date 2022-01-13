@@ -9,37 +9,58 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap"
-        rel="stylesheet">
-
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Prata&family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Philosopher&family=Prata&family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap'">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gelasio&family=Philosopher&family=Prata&family=Roboto:wght@100;500&family=Zen+Kurenaido&display=swap">
     <title>Visit Polonia</title>
 
 </head>
 
 <body>
 
-    <header class="header">
-        <a href="index.html"><img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Flag_of_Poland_%28with_coat_of_arms%29.svg/1920px-Flag_of_Poland_%28with_coat_of_arms%29.svg.png"
-                alt="flag" width="150" height="75"></a>
-        <nav class="header__nav">
-            <ul class="header__nav--principal">
-                <li><a href="index.html" class="home">Home</a></li>
-                <li><a href="pages/servicios.html" class="services">Servicios</a></li>
-                <li><a href="pages/tours.html" class="toures">Tours</a></li>
-                <li><a href="pages/about.html" class="acerca">About</a></li>
-                <li><a href="pages/contact.html" class="contactame">Contacto</a></li>
+<header class="header">
+    <div class="flag"><a href="index.html"> <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Flag_of_Poland_%28with_coat_of_arms%29.svg/1920px-Flag_of_Poland_%28with_coat_of_arms%29.svg.png"
+        alt="flag" width="150" height="75" class="flagheader">
+    
+
+</a>
+    <div class="container">
+        
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                       <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-white">Home</a></li>
+                <li><a href="pages/servicios.html" class="nav-link px-2 text-white">Servicios</a></li>
+                <li><a href="pages/tours.html" class="nav-link px-2 text-white">Tours</a></li>
+                <li><a href="pages/about.html" class="nav-link px-2 text-white">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link px-2 text-white">Contacto</a></li>
             </ul>
 
-        </nav>
-    </header>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+
+
+
 
     <div class="contenedorFlex">
 
         <section class="section_contenido">
 
             <h1 class="titulo"><b>Visita Polonia, la joya de Europa del Este</b></h1>
+            <div class="parrafo">
             <p>Polonia es un país de Europa Oriental en el mar Báltico, conocido por su arquitectura medieval y su
                 herencia judía. En la ciudad de Cracovia, el castillo de Wawel del siglo XIV se eleva por sobre la
                 antigua ciudad medieval, donde se encuentra la Lonja de los Paños, un establecimiento comercial
@@ -47,11 +68,77 @@
                 concentración Auschwitz-Birkenau y las vastas minas de sal de Wieliczka, con salas y túneles
                 subterráneos.
             </p>
-
-            <div class="imagenCuerpo">
-                <img class="imagenCuerpoDos" src="https://www.chido-fajny.com/wp-content/uploads/2015/02/Krakow_rynek_01-e1424208497392.jpg"
-                    alt="europa" width="400">
             </div>
+            <div class="cardContainer">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://wise.com/imaginary/se-puede-pagar-en-euros-en-polonia_513018737.jpg?width=1200" alt="Varsovia" width="300" height="200">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Varsovia</h1>
+                    <p>1.700.000 habitantes</p>
+                    <p>Capital de Polonia desde 1596</p>
+                  </div>
+                </div>
+              </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://www.ubuntizando.com/wp-content/uploads/2020/08/polonia-1024x576.jpeg" alt="Cracovia" width="300" height="200">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Cracovia</h1>
+                    <p>766.683 habitantes</p>
+                    <p>Limita con República Checa</p>
+                  </div>
+                </div>
+            </div>
+          
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://3.bp.blogspot.com/-4CZHLu53-EQ/W1tU7q-u-xI/AAAAAAAAVog/EruAzw0srOICz3RGqzfszIyyYSss4QgHQCEwYBhgL/s1600/03.%2BGdansk%2B%252874%2529.JPG" alt="Gdansk" width="300" height="200">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Gdansk</h1>
+                    <p>582.205 habitantes</p>
+                    <p>Situada en la costa del Báltico</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://www.efetur.com/core/blogs.dir/2/files//2016/02/50626_7.jpg" alt="Breslavia" width="300" height="200">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Breslavia</h1>
+                    <p> 638.659 habitantes</p>
+                    <p> Ubicada cerca del río Óder</p>
+                  </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://img.bekiaviajes.com/articulos/portada/72000/72969-h.jpg" alt="Poznán" width="300" height="200">
+                  </div>
+                  <div class="flip-card-back">
+                    <h1>Poznán</h1>
+                    <p>540.365 habitantes</p>
+                    <p>Ubicada a orillas del río Varta</p>
+                  </div>
+                </div>
+            </div>
+          
+        </div>
+
+
+            <div class="parrafo">
             <p>La creación de la nación es con frecuencia identificada con la adopción del catolicismo por su monarca
                 Miecislao I en el año 966, cuando su territorio era similar al de la Polonia moderna. El Reino de
                 Polonia fue formado en 1025, y en 1569 cimentó una larga asociación con el Gran Ducado de Lituania al
@@ -76,6 +163,7 @@
                 y 17 Patrimonio de la Humanidad de la UNESCO. Es visitado por 19,6 millones de turistas cada año (2018),
                 por lo que es el decimosexto país más visitado del planeta.
             </p>
+        </div>
         </section>
 
 
@@ -85,7 +173,7 @@
 
 
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="i1">
             <div class="Imagen1"><img
                     src="https://elblogdelviajero.com/wp-content/uploads/2021/03/ccimage-shutterstock_436115014-1.jpg"
@@ -112,6 +200,8 @@
         </div>
     </div>
 
+
+
     <footer class="footer">
         <h3>Encuéntranos en redes sociales</h3>
 
@@ -123,6 +213,13 @@
         </ul>
     </footer>
 
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+
+<script src="./js/bootstrap.min.js"></script>
 
 </html>
