@@ -515,7 +515,7 @@ text-align: center;
 
 /*-----GRID IMAGENES HOME-----*/
 
-/* .container-fluid {
+.container-fluid {
     display: grid;
     grid-auto-columns: 1fr;
     grid-auto-rows: 1fr;
@@ -527,7 +527,7 @@ text-align: center;
     justify-content: center;
     flex-direction: column;
    
-} */
+}
 
 .container-fluid{display:flex;
 flex-direction: column}
@@ -535,15 +535,10 @@ flex-direction: column}
 .i1 {display: flex;
 align-content: center;
 padding-top: 2rem;
-<<<<<<< HEAD
 padding-right: 5rem;
 padding-bottom: 3rem;
 }
-=======
-padding-right: 12rem;
-padding-bottom: 3rem;
-padding-left: 10rem;}
->>>>>>> ambienteDev
+
 
 .i1 {
     display: grid;
