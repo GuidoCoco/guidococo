@@ -1,522 +1,536 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 /*--------------------------------INDEX--------------------------------*/
-
 /*-----BODY-----*/
-
-body{font-family: 'Zen Kurenaido', sans-serif;}
-h1{
-    background-color: white;
-    padding: 2rem;
+body {
+  font-family: "Zen Kurenaido", sans-serif;
 }
 
-.Imagen1:hover {filter: grayscale(80%);}
+h1 {
+  background-color: white;
+  padding: 2rem;
+}
 
-.Imagen2:hover {filter: grayscale(80%);}
+.Imagen1:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen3:hover {filter: grayscale(80%);}
+.Imagen2:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen4:hover {filter: grayscale(80%);}
+.Imagen3:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen5:hover {filter: grayscale(80%);}
+.Imagen4:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen6:hover {filter: grayscale(80%);}
+.Imagen5:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen7:hover {filter: grayscale(80%);}
+.Imagen6:hover {
+  filter: grayscale(80%);
+}
 
-.Imagen8:hover {filter: grayscale(80%);}
+.Imagen7:hover {
+  filter: grayscale(80%);
+}
 
+.Imagen8:hover {
+  filter: grayscale(80%);
+}
 
 /*-----HEADER-----*/
-
-.header{background-color: #a73c3c;
-padding-top: 1rem;
-padding-bottom: 1rem;}
-
-
-.flag{display: flex;
-    padding-left: 1rem;                
+.header {
+  background-color: #a73c3c;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.container{
-    font-family: 'Philosopher', sans-serif;
-    }
+.flag {
+  display: flex;
+  padding-left: 1rem;
+}
 
-
+.container {
+  font-family: "Philosopher", sans-serif;
+}
 
 /*-----NAV-----*/
+.home:hover {
+  color: black;
+}
 
-.home:hover{color: black;}
-.services:hover{color: black;}
-.toures:hover{color: black;}
-.acerca:hover{color: black;}
-.contactame:hover{color: black;}
+.services:hover {
+  color: black;
+}
+
+.toures:hover {
+  color: black;
+}
+
+.acerca:hover {
+  color: black;
+}
+
+.contactame:hover {
+  color: black;
+}
 
 .header__nav ul {
-    padding: 2rem;
-    list-style-type: none;
+  padding: 2rem;
+  list-style-type: none;
 }
 
-.header__nav li{
-    display: inline-block;
+.header__nav li {
+  display: inline-block;
 }
 
-.header__nav a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
-    padding: 0.1rem;
+.header__nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  padding: 0.1rem;
 }
 
-.header__titulo{
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    }
+.header__titulo {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
 
 /*-----CONTENIDO-----*/
-
-
-
-.titulo{display: flex;
-justify-content: center;}
-
-.contenedorFlex{
-    display: flex;
-    align-content: center;
-    flex-direction: column;
+.titulo {
+  display: flex;
+  justify-content: center;
+  font-family: "Prata", serif;
 }
 
-.titulo{
-    font-family:'Prata', serif;
+.contenedorFlex {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
 }
 
-.parrafo{
-    font-family: 'Gelasio', serif;
+.parrafo {
+  font-family: "Gelasio", serif;
 }
-
-
 
 /*-----CARDS-----*/
-
-.cardContainer{display: flex;
-    align-content: center;
-    justify-content: space-evenly
-    
-    
-}
-
-.cardContainer{
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+.cardContainer {
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .flip-card {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Efecto 3D */
-  }
-  
-  /* Posición y tamaño de frente y dorso */
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  /* Hover sobre las tarjetas */
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  /* Posición del frente y el dorso */
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  
-  /* Estilo del frente */
-  .flip-card-front {
-    background-color: #bbb;
-    color: black;
-  }
-  
-  /* Estilo del dorso de la tarjeta */
-  .flip-card-back {
-    background-color: rgb(243, 83, 83);
-    color: rgb(243, 83, 83);
-    transform: rotateY(180deg);
-  }
-
-
-.section_contenido{
-    background-color: rgb(255, 255, 255);
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(209, 47, 47);
-    text-align: justify;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  /* Efecto 3D */
 }
 
+/* Posición y tamaño de frente y dorso */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
 
+/* Hover sobre las tarjetas */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Posición del frente y el dorso */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Estilo del frente */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Estilo del dorso de la tarjeta */
+.flip-card-back {
+  background-color: #f35353;
+  color: #f35353;
+  transform: rotateY(180deg);
+}
+
+.section_contenido {
+  background-color: white;
+  padding: 1rem;
+}
+.section_contenido .titulo {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #d12f2f;
+  text-align: justify;
+  font-size: 50px;
+}
+
+.parrafo {
+  background-color: white;
+}
+.parrafo .p {
+  text-align: justify;
+}
 
 .section_contenido p {
-    color: black;}
-
-.imagenCuerpo{display: flex;
-    justify-content: space-around;
-    padding-top: 1rem;
-    padding-bottom: 1rem;}
-
-.imagenCuerpoDos {box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
-text-align: center;
+  color: black;
 }
 
+.imagenCuerpo {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
+.imagenCuerpoDos {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
 
 /*-----IMAGENES-----*/
-
-.container-fluid{
-    display: flex;
-    justify-content:center;
-    gap: 15px;
-    background-color: rgb(211, 55, 55);
-    padding: 15px;
-    
-
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background-color: #d33737;
+  padding: 15px;
 }
-
 
 /*-----FOOTER-----*/
+.footer {
+  background-color: white;
+  color: #c42222;
+  padding: 2rem;
+}
+
+.footer ul {
+  list-style-type: none;
+}
 
 .footer {
-    background-color: rgb(255, 255, 255);
-    color: rgb(196, 34, 34);
-    padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Prata", serif;
 }
 
-.footer ul{
-    list-style-type: none;
-}
-
-.footer{display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Prata', serif;}
-
-.footer_menu{font-family: 'Roboto', sans-serif;
+.footer_menu {
+  font-family: "Roboto", sans-serif;
 }
 
 /*----------------------------------------------------SERVICIOS----------------------------------------------------*/
-
-.header__servicios{
-    background-color: rgb(209, 47, 47);
-    background-size: cover;
-    background-position: center;
+.header__servicios {
+  background-color: #d12f2f;
+  background-size: cover;
+  background-position: center;
 }
-
 
 /*-----NAV SERVICIOS-----*/
-
 .header__nav--servicios ul {
-    padding: 2rem;
-    list-style-type: none;
+  padding: 2rem;
+  list-style-type: none;
 }
 
-.header__nav--servicios li{
-    display: inline-block;
+.header__nav--servicios li {
+  display: inline-block;
 }
 
-.header__nav--servicios a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
-    background-color: rgb(209, 47, 47);
-    padding: 0.1rem;
+.header__nav--servicios a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #d12f2f;
+  padding: 0.1rem;
 }
 
-.header__titulo--servicios{
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    }
+.header__titulo--servicios {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
 
 /*-----CONTENIDO SERVICIOS-----*/
-
-.servicios p {background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;}
-
-.serviciosImagenes {
-    background-color: whitesmoke;
-    padding: 1rem;
-        }
-
-.gallery{
-            width: 98%;
-            height: auto;
-            /* background-color: #3e1f4e; */
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 3rem;
-            padding: 2rem ;
-            margin: 2rem auto;
-            background-color: #d16b6b;
-        }
-.gallery  img {
-            width: 100%;
-            height: auto;
-            border-radius: 0.5rem;
-            transition: all 0.3s;
-        }
-        
-.gallery  img:hover{
-           
-            opacity: 0.5;
-            transform: scale(1.1);
-            
-        }
-
- /*-----FOOTER SERVICIOS-----*/
-
- .footer__servicios {
-    background-color: whitesmoke;
-    color: rgb(196, 34, 34);
-    padding: 2rem;
+.servicios p {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
-.footer__servicios ul{
-    list-style-type: none;
+.serviciosImagenes {
+  background-color: whitesmoke;
+  padding: 1rem;
+}
+
+.gallery {
+  width: 98%;
+  height: auto;
+  /* background-color: #3e1f4e; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #d16b6b;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.gallery img:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
+/*-----FOOTER SERVICIOS-----*/
+.footer__servicios {
+  background-color: whitesmoke;
+  color: #c42222;
+  padding: 2rem;
+}
+
+.footer__servicios ul {
+  list-style-type: none;
 }
 
 /*----------------------------------------------------TOURS----------------------------------------------------*/
-
-.header__tours{
-    background-color: rgb(209, 47, 47);
-    background-size: cover;
-    background-position: center;
+.header__tours {
+  background-color: #d12f2f;
+  background-size: cover;
+  background-position: center;
 }
 
 /*-----NAV TOURS-----*/
-
 .header__nav--tours ul {
-    padding: 2rem;
-    list-style-type: none;
+  padding: 2rem;
+  list-style-type: none;
 }
 
-.header__nav--tours li{
-    display: inline-block;
+.header__nav--tours li {
+  display: inline-block;
 }
 
-.header__nav--tours a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
-    background-color: rgb(209, 47, 47);
-    padding: 0.1rem;
+.header__nav--tours a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #d12f2f;
+  padding: 0.1rem;
 }
 
-.header__titulo--tours{
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    }
+.header__titulo--tours {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
 
 /*-----CONTENIDO TOURS-----*/
-
-
-.tours p {background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;}
-
-.tourCracovia{background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
+.tours p {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
-.tourGdansk{background-color: rgb(209, 47, 47);
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
+.tourCracovia {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
-.tourBreslavia{background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
+.tourGdansk {
+  background-color: #d12f2f;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
-.tourVarsovia{background-color: rgb(209, 47, 47);
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
+.tourBreslavia {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
- /*-----FOOTER TOURS-----*/
-
- .footer__tours {
-    background-color: whitesmoke;
-    color: rgb(196, 34, 34);
-    padding: 2rem;
+.tourVarsovia {
+  background-color: #d12f2f;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
 }
 
-.footer__tours ul{
-    list-style-type: none;
+/*-----FOOTER TOURS-----*/
+.footer__tours {
+  background-color: whitesmoke;
+  color: #c42222;
+  padding: 2rem;
+}
+
+.footer__tours ul {
+  list-style-type: none;
 }
 
 /*----------------------------------------------------ABOUT----------------------------------------------------*/
-
-.header__about{
-    background-color: rgb(209, 47, 47);
-    background-size: cover;
-    background-position: center;
+.header__about {
+  background-color: #d12f2f;
+  background-size: cover;
+  background-position: center;
 }
 
 /*-----NAV ABOUT-----*/
-
 .header__nav--about ul {
-    padding: 2rem;
-    list-style-type: none;
+  padding: 2rem;
+  list-style-type: none;
 }
 
-.header__nav--about li{
-    display: inline-block;
+.header__nav--about li {
+  display: inline-block;
 }
 
-.header__nav--about a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
-    background-color: rgb(209, 47, 47);
-    padding: 0.1rem;
+.header__nav--about a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #d12f2f;
+  padding: 0.1rem;
 }
 
-.header__titulo--about{
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    }
+.header__titulo--about {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
 
 /*-----CONTENIDO ABOUT-----*/
+.aboutMapa {
+  background-color: whitesmoke;
+  padding: 1rem;
+}
 
-.aboutMapa{background-color: whitesmoke;
-            padding: 1rem;}
-
-.about {background-color: whitesmoke;
-        padding: 1rem;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        color: rgb(7, 7, 7);
-        text-align: justify;}
+.about {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  color: #070707;
+  text-align: justify;
+}
 
 /*-----FOOTER ABOUT-----*/
-
- .footer__about {
-    background-color: whitesmoke;
-    color: rgb(196, 34, 34);
-    padding: 2rem;
+.footer__about {
+  background-color: whitesmoke;
+  color: #c42222;
+  padding: 2rem;
 }
 
-.footer__about ul{
-    list-style-type: none;
+.footer__about ul {
+  list-style-type: none;
 }
 
-    
 /*----------------------------------------------------CONTACTO----------------------------------------------------*/
-.header__contacto{
-    background-color: rgb(209, 47, 47);
-    background-size: cover;
-    background-position: center;
+.header__contacto {
+  background-color: #d12f2f;
+  background-size: cover;
+  background-position: center;
 }
 
 /*-----NAV CONTACT-----*/
-
 .header__nav--contacto ul {
-    padding: 2rem;
-    list-style-type: none;
+  padding: 2rem;
+  list-style-type: none;
 }
 
-.header__nav--contacto li{
-    display: inline-block;
+.header__nav--contacto li {
+  display: inline-block;
 }
 
-.header__nav--contacto a{
-    text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    color: white;
-    font-size: 0.9rem;
-    background-color: rgb(209, 47, 47);
-    padding: 0.1rem;
+.header__nav--contacto a {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  background-color: #d12f2f;
+  padding: 0.1rem;
 }
 
-.header__titulo--contacto{
-    color: white;
-    font-size: 2rem;
-    padding: 2rem;
-    }
+.header__titulo--contacto {
+  color: white;
+  font-size: 2rem;
+  padding: 2rem;
+}
 
 /*-----FORMULARIO-----*/
-
-.formContacto{background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: rgb(224, 59, 59);
-    }
+.formContacto {
+  background-color: whitesmoke;
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: #e03b3b;
+}
 
 /*-----FOOTER ABOUT-----*/
-
 .footer__contacto {
-    background-color: whitesmoke;
-    color: rgb(196, 34, 34);
-    padding: 2rem;
+  background-color: whitesmoke;
+  color: #c42222;
+  padding: 2rem;
 }
 
-.footer__contacto ul{
-    list-style-type: none;
+.footer__contacto ul {
+  list-style-type: none;
 }
-
-
-
-
 
 /*-----GRID IMAGENES HOME-----*/
-
 /* .container-fluid {
     display: grid;
     grid-auto-columns: 1fr;
@@ -527,84 +541,78 @@ text-align: center;
 .container-fluid { 
     display: flex;
     justify-content: center;
-   
-} */
 
-.container-fluid{display:flex;
-flex-direction: column}
-  
-.i1 {display: flex;
-align-content: center;
-padding-top: 2rem;
-padding-right: 12rem;
-padding-bottom: 3rem;
-padding-left: 10rem;}
+} */
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
 
 .i1 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Imagen1 Imagen2 Imagen3 Imagen4"
-      "Imagen5 Imagen6 Imagen7 Imagen8";
-    
-  }
+  display: flex;
+  align-content: center;
+  padding-top: 2rem;
+  padding-right: 12rem;
+  padding-bottom: 3rem;
+  padding-left: 10rem;
+}
 
+.i1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px 25px;
+  grid-auto-flow: row;
+  grid-template-areas: "Imagen1 Imagen2 Imagen3 Imagen4" "Imagen5 Imagen6 Imagen7 Imagen8";
+}
 
 /*---------RESPONSIVO SECCIÓN SERVICIOS---------*/
+@media screen and (max-width: 850px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #695fd8;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+    background-color: #f10c6c;
+  }
+}
+/*---------RESPONSIVO SECCIÓN TOURS---------*/
+@media screen and (max-width: 850px) {
+  .tourVarsovia {
+    background-color: #695fd8;
+  }
 
+  .tourCracovia {
+    background-color: chartreuse;
+  }
 
-@media screen and (max-width: 850px){
+  .tourGdansk {
+    background-color: darkcyan;
+  }
 
-        .gallery {
-            grid-template-columns: repeat(2, 1fr);
-            background-color: #695fd8;
-        }
-    }
-        
-@media screen and (max-width: 480px){
-    
-    
-        .gallery {
-            grid-template-columns: repeat(1, 1fr);
-            background-color: #f10c6c;
-        }
-    }
-      
-/*---------RESPONSIVO SECCIÓN TOURS---------*/   
+  .tourBreslavia {
+    background-color: darkslategrey;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tourVarsovia {
+    background-color: #f10c6c;
+  }
 
-@media screen and (max-width: 850px){
+  .tourCracovia {
+    background-color: #0f90c4;
+  }
 
-        .tourVarsovia {
-            background-color: #695fd8;
-        }
-        .tourCracovia{
-            background-color: chartreuse;
-        }
-        .tourGdansk{
-            background-color: darkcyan;
-        }
-        .tourBreslavia{
-            background-color: darkslategrey;
-        }
-    }
-        
-@media screen and (max-width: 480px){
-        
-        .tourVarsovia {
-            background-color: #f10c6c;
-        }
-        .tourCracovia{
-            background-color: rgb(15, 144, 196);
-        }
-        .tourGdansk{
-            background-color: rgb(76, 0, 139);
-        }
-        .tourBreslavia{
-            background-color: rgb(111, 3, 138);
-        }
-    }
-    }
-      
+  .tourGdansk {
+    background-color: #4c008b;
+  }
+
+  .tourBreslavia {
+    background-color: #6f038a;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */
