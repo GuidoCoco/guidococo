@@ -41,6 +41,20 @@ $font: "Gelasio", serif;
     }
 
 
+// MAPS
+
+$estilos: (
+  color: rgb(247, 103, 103),
+  centro: center
+);
+
+.servicios {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: 1rem;
+  color: rgb(247, 103, 103);
+}
+
 
 /*--------------------------------INDEX--------------------------------*/
 

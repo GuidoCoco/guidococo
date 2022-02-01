@@ -10,6 +10,13 @@ h1 {
   font-family: "Gelasio", serif;
 }
 
+.servicios {
+  background-color: #f76767;
+  text-align: center;
+  padding: 1rem;
+  color: #f76767;
+}
+
 /*--------------------------------INDEX--------------------------------*/
 /*-----BODY-----*/
 body {
