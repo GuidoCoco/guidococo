@@ -12,6 +12,34 @@ $color-secundario: white;
 $color-hover: black;
 $font: "Gelasio", serif;
 
+// MIXIN
+
+@mixin color-principal {
+    background-color: rgb(243, 83, 83);
+    color: black;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+  }
+
+@mixin color-secundario {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    
+}
+
+// EXTEND
+
+%heading {
+    color: rgb(0, 0, 0);
+    font-family: "Gelasio", serif;
+    }
+
 
 
 /*--------------------------------INDEX--------------------------------*/
@@ -280,6 +308,8 @@ text-align: center;
 
 /*-----CONTENIDO SERVICIOS-----*/
 
+h1 {@extend %heading;}
+
 .servicios p {background-color: whitesmoke;
     padding: 1rem;
     font-size: 1.2rem;
@@ -366,45 +396,17 @@ text-align: center;
 
 /*-----CONTENIDO TOURS-----*/
 
+h1 {@extend %heading;}
 
-.tours p {background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;}
+.tours p {@include color-secundario()}
 
-.tourCracovia{background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
-}
+.tourCracovia {@include color-secundario()}
 
-.tourGdansk{background-color: rgb(209, 47, 47);
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
-}
+.tourGdansk{@include color-principal()}
 
-.tourBreslavia{background-color: whitesmoke;
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
-}
+.tourBreslavia{@include color-secundario()}
 
-.tourVarsovia{background-color: rgb(209, 47, 47);
-    padding: 1rem;
-    font-size: 1.2rem;
-    line-height: 1.8rem;
-    color: rgb(7, 7, 7);
-    text-align: justify;
-}
+.tourVarsovia{@include color-principal()}
 
  /*-----FOOTER TOURS-----*/
 
@@ -418,7 +420,9 @@ text-align: center;
     list-style-type: none;
 }
 
-/*----------------------------------------------------ABOUT----------------------------------------------------*/
+// /*---ABOUT-------------------*/
+
+h1 {@extend %heading;}
 
 .header__about{
     background-color: rgb(209, 47, 47);
@@ -514,11 +518,17 @@ text-align: center;
 
 /*-----FORMULARIO-----*/
 
-.formContacto{background-color: whitesmoke;
+.formContactoUno{background-color: rgb(255, 255, 255);
     padding: 1rem;
     font-size: 1.2rem;
     color: rgb(224, 59, 59);
     }
+
+.formContactoUno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*-----FOOTER ABOUT-----*/
 
@@ -531,10 +541,6 @@ text-align: center;
 .footer__contacto ul{
     list-style-type: none;
 }
-
-
-
-
 
 /*-----GRID IMAGENES HOME-----*/
 
