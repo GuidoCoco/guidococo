@@ -5,6 +5,18 @@
   box-sizing: border-box;
 }
 
+h1 {
+  color: black;
+  font-family: "Gelasio", serif;
+}
+
+.servicios {
+  background-color: #f76767;
+  text-align: center;
+  padding: 1rem;
+  color: #f76767;
+}
+
 /*--------------------------------INDEX--------------------------------*/
 /*-----BODY-----*/
 body {
@@ -364,47 +376,47 @@ h1 {
 
 /*-----CONTENIDO TOURS-----*/
 .tours p {
-  background-color: whitesmoke;
+  background-color: white;
+  color: black;
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
 }
 
 .tourCracovia {
-  background-color: whitesmoke;
+  background-color: white;
+  color: black;
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
 }
 
 .tourGdansk {
-  background-color: #d12f2f;
+  background-color: #f35353;
+  color: black;
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
 }
 
 .tourBreslavia {
-  background-color: whitesmoke;
+  background-color: white;
+  color: black;
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
 }
 
 .tourVarsovia {
-  background-color: #d12f2f;
+  background-color: #f35353;
+  color: black;
   padding: 1rem;
   font-size: 1.2rem;
   line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
 }
 
@@ -419,7 +431,6 @@ h1 {
   list-style-type: none;
 }
 
-/*----------------------------------------------------ABOUT----------------------------------------------------*/
 .header__about {
   background-color: #d12f2f;
   background-size: cover;
@@ -512,11 +523,17 @@ h1 {
 }
 
 /*-----FORMULARIO-----*/
-.formContacto {
-  background-color: whitesmoke;
+.formContactoUno {
+  background-color: white;
   padding: 1rem;
   font-size: 1.2rem;
   color: #e03b3b;
+}
+
+.formContactoUno {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*-----FOOTER ABOUT-----*/
