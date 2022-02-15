@@ -166,8 +166,9 @@ font-family:'Prata', serif;}
     justify-content: space-evenly;
     padding-top: 3rem;
     padding-bottom: 3rem;
-        
+       
 }
+
 
 .flip-card {
     background-color: transparent;
@@ -322,9 +323,18 @@ text-align: center;
 
 /*-----CONTENIDO SERVICIOS-----*/
 
-h1 {@extend %heading;}
+.serviciosTit{display: flex;
+    justify-content: center;}
 
-.servicios p {background-color: whitesmoke;
+.servicios{
+    background-color: rgb(255, 255, 255);
+}
+
+.serviciosTit{
+    background-color: rgb(255, 255, 255);
+}
+
+.servicios p {background-color: rgb(255, 253, 253);
     padding: 1rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -332,7 +342,7 @@ h1 {@extend %heading;}
     text-align: justify;}
 
 .serviciosImagenes {
-    background-color: whitesmoke;
+    background-color: rgb(209, 47, 47);
     padding: 1rem;
         }
 
@@ -345,7 +355,7 @@ h1 {@extend %heading;}
             gap: 3rem;
             padding: 2rem ;
             margin: 2rem auto;
-            background-color: #d16b6b;
+            background-color: rgb(209, 47, 47);
         }
 .gallery  img {
             width: 100%;
@@ -412,6 +422,11 @@ h1 {@extend %heading;}
 
 h1 {@extend %heading;}
 
+.toursTit
+    {display: flex;
+        justify-content: center;
+}
+
 .tours p {@include color-secundario()}
 
 .tourCracovia {@include color-secundario()}
@@ -437,6 +452,10 @@ h1 {@extend %heading;}
 // /*---ABOUT-------------------*/
 
 h1 {@extend %heading;}
+.aboutTit
+    {display: flex;
+        justify-content: center;
+}
 
 .header__about{
     background-color: rgb(209, 47, 47);
@@ -556,51 +575,119 @@ h1 {@extend %heading;}
     list-style-type: none;
 }
 
-/*-----GRID IMAGENES HOME-----*/
 
-/* .container-fluid {
-    display: grid;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    grid-auto-flow: row;
-    }
-
-.container-fluid { 
-    display: flex;
-    justify-content: center;
-   
-} */
 
 .container-fluid{display:flex;
-flex-direction: column}
-  
-.i1 {display: flex;
-align-content: center;
-padding-top: 2rem;
-padding-right: 12rem;
-padding-bottom: 3rem;
-padding-left: 10rem;}
+flex-direction: column;
+background-color: rgb(209, 47, 47); 
+}
 
-.i1 {
+.i1{
+    width: 98%;
+    height: auto;
+    /* background-color: #3e1f4e; */
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 25px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Imagen1 Imagen2 Imagen3 Imagen4"
-      "Imagen5 Imagen6 Imagen7 Imagen8";
-    
-  }
+    gap: 3rem;
+    padding: 2rem ;
+    margin: 2rem auto;
+    background-color: rgb(209, 47, 47);
+}
+.i1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    transition: all 0.3s;
+}
 
+.gallery  img:hover{
+   
+    opacity: 0.5;
+    transform: scale(1.1);
+    
+}
+/*---------RESPONSIVO SECCIÓN INDEX---------*/
+@media screen and (max-width: 850px){
+
+    .i1 {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(209, 47, 47);
+    }
+}
+    
+@media screen and (max-width: 480px){
+
+
+    .i1{
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgb(209, 47, 47);
+    }
+}
+
+// TÍTULO
+
+@media screen and (max-width: 850px){
+
+    .section_contenido .titulo {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #f35353;
+        text-align: justify;
+        font-size: 35px;
+    }
+      
+    }
+
+@media screen and (max-width: 480px){
+
+    .section_contenido .titulo {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #f35353;
+        text-align: justify;
+        font-size: 20px;
+    }
+      
+    }
 
 /*---------RESPONSIVO SECCIÓN SERVICIOS---------*/
+
+// CARDS
+
+@media screen and (max-width: 850px){
+.cardContainer {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    background-color: rgb(209, 47, 47);
+}
+}
+
+@media screen and (max-width: 480px){
+    
+    
+    .cardContainer {display: flex;
+        align-content: center;
+        justify-content: space-evenly;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        background-color: rgb(209, 47, 47);
+    }
+    
+    
+}
 
 
 @media screen and (max-width: 850px){
 
         .gallery {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             background-color: #695fd8;
         }
     }
