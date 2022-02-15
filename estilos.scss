@@ -323,9 +323,18 @@ text-align: center;
 
 /*-----CONTENIDO SERVICIOS-----*/
 
-h1 {@extend %heading;}
+.serviciosTit{display: flex;
+    justify-content: center;}
 
-.servicios p {background-color: whitesmoke;
+.servicios{
+    background-color: rgb(255, 255, 255);
+}
+
+.serviciosTit{
+    background-color: rgb(255, 255, 255);
+}
+
+.servicios p {background-color: rgb(255, 253, 253);
     padding: 1rem;
     font-size: 1.2rem;
     line-height: 1.8rem;
@@ -333,7 +342,7 @@ h1 {@extend %heading;}
     text-align: justify;}
 
 .serviciosImagenes {
-    background-color: whitesmoke;
+    background-color: rgb(209, 47, 47);
     padding: 1rem;
         }
 
@@ -346,7 +355,7 @@ h1 {@extend %heading;}
             gap: 3rem;
             padding: 2rem ;
             margin: 2rem auto;
-            background-color: #d16b6b;
+            background-color: rgb(209, 47, 47);
         }
 .gallery  img {
             width: 100%;
@@ -413,6 +422,11 @@ h1 {@extend %heading;}
 
 h1 {@extend %heading;}
 
+.toursTit
+    {display: flex;
+        justify-content: center;
+}
+
 .tours p {@include color-secundario()}
 
 .tourCracovia {@include color-secundario()}
@@ -438,6 +452,10 @@ h1 {@extend %heading;}
 // /*---ABOUT-------------------*/
 
 h1 {@extend %heading;}
+.aboutTit
+    {display: flex;
+        justify-content: center;
+}
 
 .header__about{
     background-color: rgb(209, 47, 47);
@@ -606,7 +624,31 @@ background-color: rgb(209, 47, 47);
     }
 }
 
+// TÍTULO
 
+@media screen and (max-width: 850px){
+
+    .section_contenido .titulo {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #f35353;
+        text-align: justify;
+        font-size: 35px;
+    }
+      
+    }
+
+@media screen and (max-width: 480px){
+
+    .section_contenido .titulo {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #f35353;
+        text-align: justify;
+        font-size: 20px;
+    }
+      
+    }
 
 /*---------RESPONSIVO SECCIÓN SERVICIOS---------*/
 
@@ -640,15 +682,12 @@ background-color: rgb(209, 47, 47);
     
     
 }
-  
-
-
 
 
 @media screen and (max-width: 850px){
 
         .gallery {
-            grid-template-columns: repeat(15, 1fr);
+            grid-template-columns: repeat(1, 1fr);
             background-color: #695fd8;
         }
     }
