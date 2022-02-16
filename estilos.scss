@@ -15,7 +15,7 @@ $font: "Gelasio", serif;
 // MIXIN
 
 @mixin color-principal {
-    background-color: rgb(243, 83, 83);
+    background-color:  rgb(224, 59, 59);
     color: black;
     padding: 1rem;
     font-size: 1.2rem;
@@ -269,7 +269,7 @@ text-align: center;
 
 .footer {
     background-color: rgb(255, 255, 255);
-    color: rgb(196, 34, 34);
+    color: rgb(0, 0, 0);
     padding: 2rem;
 }
 
@@ -284,6 +284,14 @@ text-align: center;
 
 .footer_menu{font-family: 'Roboto', sans-serif;
 }
+
+.footer_menu li a {text-decoration: none;
+color: rgb(3, 3, 3);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif}
+
+.h6{display: flex;
+align-content: flex-start;
+color:rgb(209, 47, 47) ;}
 
 /*----------------------------------------------------SERVICIOS----------------------------------------------------*/
 
@@ -449,6 +457,10 @@ h1 {@extend %heading;}
 
 .tourVarsovia{@include color-principal()}
 .tourVarsovia{font-family: 'Gelasio', serif;}
+
+.iFrames{text-align: center;}
+
+.h3Tours{text-align: center;}
 
  /*-----FOOTER TOURS-----*/
 

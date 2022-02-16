@@ -239,7 +239,7 @@ h1 {
 /*-----FOOTER-----*/
 .footer {
   background-color: white;
-  color: #c42222;
+  color: black;
   padding: 2rem;
 }
 
@@ -256,6 +256,18 @@ h1 {
 
 .footer_menu {
   font-family: "Roboto", sans-serif;
+}
+
+.footer_menu li a {
+  text-decoration: none;
+  color: #030303;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.h6 {
+  display: flex;
+  align-content: flex-start;
+  color: #d12f2f;
 }
 
 /*----------------------------------------------------SERVICIOS----------------------------------------------------*/
@@ -425,7 +437,7 @@ h1 {
 }
 
 .tourGdansk {
-  background-color: #f35353;
+  background-color: #e03b3b;
   color: black;
   padding: 1rem;
   font-size: 1.2rem;
@@ -451,7 +463,7 @@ h1 {
 }
 
 .tourVarsovia {
-  background-color: #f35353;
+  background-color: #e03b3b;
   color: black;
   padding: 1rem;
   font-size: 1.2rem;
@@ -461,6 +473,14 @@ h1 {
 
 .tourVarsovia {
   font-family: "Gelasio", serif;
+}
+
+.iFrames {
+  text-align: center;
+}
+
+.h3Tours {
+  text-align: center;
 }
 
 /*-----FOOTER TOURS-----*/
