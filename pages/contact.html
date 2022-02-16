@@ -60,25 +60,60 @@
     <div class="formContactoUno">
         <section class="formContacto">
             <h1><u>CONTACTO</u></h1>
-            <form action="">
-                <label for="name">Nombre</label>
-                <input type="text" name="name" id="name" required placeholder="Your name"> <br>
-                <label for="apellido">Apellido</label>
-                <input type="text" name="apellido" id="apellido" required placeholder="Your surname"><br>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required> <br>
-                <label for="clave">Clave</label>
-                <input type="password" name="clave" id="clave" required> <br>
-                <br>
-                <label for="consulta">Consulta</label>
+                 <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                          <option selected>Choose...</option>
+                          <option>Argentina</option>
+                          <option>Brasil</option>
+                          <option>Chile</option>
+                          <option>Colombia</option>
+                          <option>Perú</option>
+                          <option>México</option>
+                          <option>Estados Unidos</option>
+                          <option>Canadá</option>                          
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                      </div>
+                    </div>
+                    <label for="consulta">Consulta</label>
             <br>
             <br>
             <textarea name="consulta" id="consulta" cols="30" rows="5" placeholder="Tu consulta"></textarea>
-                <br>
-                <input type="submit" name="enviar" id="enviar">
-        
+            <br>
+                               
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </form>
 
-                </form>
+
+    
 
 
 
