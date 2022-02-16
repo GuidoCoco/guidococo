@@ -324,7 +324,10 @@ text-align: center;
 /*-----CONTENIDO SERVICIOS-----*/
 
 .serviciosTit{display: flex;
-    justify-content: center;}
+    justify-content: center;
+    font-family:'Prata', serif;
+    color: rgb(209, 47, 47);
+    }
 
 .servicios{
     background-color: rgb(255, 255, 255);
@@ -339,7 +342,8 @@ text-align: center;
     font-size: 1.2rem;
     line-height: 1.8rem;
     color: rgb(7, 7, 7);
-    text-align: justify;}
+    text-align: justify;
+    font-family: 'Gelasio', serif;}
 
 .serviciosImagenes {
     background-color: rgb(209, 47, 47);
@@ -424,18 +428,27 @@ h1 {@extend %heading;}
 
 .toursTit
     {display: flex;
-        justify-content: center;
+    justify-content: center;
+    font-family:'Prata', serif;
+    color: rgb(209, 47, 47);
+
 }
+
+.tours p {font-family: 'Gelasio', serif;}
 
 .tours p {@include color-secundario()}
 
 .tourCracovia {@include color-secundario()}
+.tourCracovia {font-family: 'Gelasio', serif;}
 
 .tourGdansk{@include color-principal()}
+.tourGdansk {font-family: 'Gelasio', serif;}
 
 .tourBreslavia{@include color-secundario()}
+.tourBreslavia{font-family: 'Gelasio', serif;}
 
 .tourVarsovia{@include color-principal()}
+.tourVarsovia{font-family: 'Gelasio', serif;}
 
  /*-----FOOTER TOURS-----*/
 
@@ -454,7 +467,9 @@ h1 {@extend %heading;}
 h1 {@extend %heading;}
 .aboutTit
     {display: flex;
-        justify-content: center;
+    justify-content: center;
+    font-family:'Prata', serif;
+    color: rgb(209, 47, 47);
 }
 
 .header__about{
@@ -492,20 +507,19 @@ h1 {@extend %heading;}
 
 /*-----CONTENIDO ABOUT-----*/
 
-.aboutMapa{background-color: whitesmoke;
+.aboutMapa{background-color: rgb(224, 59, 59);
             padding: 1rem;}
 
-.about {background-color: whitesmoke;
+.about {background-color: rgb(255, 255, 255);
         padding: 1rem;
-        font-size: 1.2rem;
-        line-height: 1.8rem;
-        color: rgb(7, 7, 7);
-        text-align: justify;}
+        text-align: justify;
+        }
+     p {font-family:'Prata', serif;}
 
 /*-----FOOTER ABOUT-----*/
 
  .footer__about {
-    background-color: whitesmoke;
+    background-color: rgb(255, 255, 255);
     color: rgb(196, 34, 34);
     padding: 2rem;
 }
@@ -548,13 +562,19 @@ h1 {@extend %heading;}
     font-size: 2rem;
     padding: 2rem;
     }
+    
+.contacto {display: flex;
+        justify-content: center;
+        font-family:'Prata', serif;
+        color:rgb(255, 255, 255) ;
+        background-color: rgb(224, 59, 59) ;}
 
 /*-----FORMULARIO-----*/
 
-.formContactoUno{background-color: rgb(255, 255, 255);
+.formContactoUno{background-color: rgb(224, 59, 59) ;
     padding: 1rem;
     font-size: 1.2rem;
-    color: rgb(224, 59, 59);
+    color: rgb(255, 251, 251);
     }
 
 .formContactoUno{
@@ -562,6 +582,8 @@ h1 {@extend %heading;}
     justify-content: center;
     align-items: center;
 }
+
+.formBs{font-family: 'Gelasio', serif;}
 
 /*-----FOOTER ABOUT-----*/
 

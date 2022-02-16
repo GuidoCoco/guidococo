@@ -295,6 +295,8 @@ h1 {
 .serviciosTit {
   display: flex;
   justify-content: center;
+  font-family: "Prata", serif;
+  color: #d12f2f;
 }
 
 .servicios {
@@ -312,6 +314,7 @@ h1 {
   line-height: 1.8rem;
   color: #070707;
   text-align: justify;
+  font-family: "Gelasio", serif;
 }
 
 .serviciosImagenes {
@@ -391,6 +394,12 @@ h1 {
 .toursTit {
   display: flex;
   justify-content: center;
+  font-family: "Prata", serif;
+  color: #d12f2f;
+}
+
+.tours p {
+  font-family: "Gelasio", serif;
 }
 
 .tours p {
@@ -411,6 +420,10 @@ h1 {
   text-align: justify;
 }
 
+.tourCracovia {
+  font-family: "Gelasio", serif;
+}
+
 .tourGdansk {
   background-color: #f35353;
   color: black;
@@ -418,6 +431,10 @@ h1 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: justify;
+}
+
+.tourGdansk {
+  font-family: "Gelasio", serif;
 }
 
 .tourBreslavia {
@@ -429,6 +446,10 @@ h1 {
   text-align: justify;
 }
 
+.tourBreslavia {
+  font-family: "Gelasio", serif;
+}
+
 .tourVarsovia {
   background-color: #f35353;
   color: black;
@@ -436,6 +457,10 @@ h1 {
   font-size: 1.2rem;
   line-height: 1.8rem;
   text-align: justify;
+}
+
+.tourVarsovia {
+  font-family: "Gelasio", serif;
 }
 
 /*-----FOOTER TOURS-----*/
@@ -452,6 +477,8 @@ h1 {
 .aboutTit {
   display: flex;
   justify-content: center;
+  font-family: "Prata", serif;
+  color: #d12f2f;
 }
 
 .header__about {
@@ -488,22 +515,23 @@ h1 {
 
 /*-----CONTENIDO ABOUT-----*/
 .aboutMapa {
-  background-color: whitesmoke;
+  background-color: #e03b3b;
   padding: 1rem;
 }
 
 .about {
-  background-color: whitesmoke;
+  background-color: white;
   padding: 1rem;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  color: #070707;
   text-align: justify;
+}
+
+p {
+  font-family: "Prata", serif;
 }
 
 /*-----FOOTER ABOUT-----*/
 .footer__about {
-  background-color: whitesmoke;
+  background-color: white;
   color: #c42222;
   padding: 2rem;
 }
@@ -545,18 +573,30 @@ h1 {
   padding: 2rem;
 }
 
+.contacto {
+  display: flex;
+  justify-content: center;
+  font-family: "Prata", serif;
+  color: white;
+  background-color: #e03b3b;
+}
+
 /*-----FORMULARIO-----*/
 .formContactoUno {
-  background-color: white;
+  background-color: #e03b3b;
   padding: 1rem;
   font-size: 1.2rem;
-  color: #e03b3b;
+  color: #fffbfb;
 }
 
 .formContactoUno {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.formBs {
+  font-family: "Gelasio", serif;
 }
 
 /*-----FOOTER ABOUT-----*/
